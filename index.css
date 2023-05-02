@@ -7,11 +7,13 @@ body {
 }
 
 /* Font */
-body, a, textarea { font-family: 'Asap', sans-serif; }
+body, a, textarea, button { font-family: 'Asap', sans-serif; }
 
 /* Transition Effect */
-nav, nav a, header #logo, #dropdown, #mobile_nav_button { transition: 0.3s ease-out; }
+nav, nav a, header #logo, #dropdown, #mobile_nav_button, button { transition: 0.3s ease-out; }
 
+
+/* ************************************* Header ************************************* */
 header {
     background: #000000d8;
     color: white;
@@ -69,11 +71,13 @@ nav .colored:hover {
     background-color: #661a7d;
 }
 
+
+/* *********************************** Body *********************************** */
 #top_img {
     background-image: url(img/temp2.jpg);
     width: 100%;
-    height: 300px;
     background-size: cover;
+    border-top: 100px solid black;
 }
 
 #dropdown {
@@ -102,16 +106,47 @@ nav .colored:hover {
     background-color: #8B26AB;
 }
 
+h1 {
+    font-size: 30pt;
+    margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    font-size: 14pt;
+    color: #333;
+    max-width: 100%;
+    min-height: 500px;
+}
+
+#block {
+    width: 100%;
+    height: 500px;
+    background: #ddd;
+    position: relative;
+}
+
+
+/* ************************************* Footer ************************************* */
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+}
+
 #contact {
-    background-color: #8B26AB;
+    /* background-color: #8B26AB; */
+    /* background-color: #222; */
     color: white;
     text-align: center;
     width: 500px;
-    margin: auto;
+    /* margin: auto; */
     padding: 15px;
-    position: relative;
-    top: -50px;
     max-width: 100%;
+    margin-left: auto;
 }
 
 #contact h1 {
@@ -127,33 +162,32 @@ nav .colored:hover {
     max-width: 100%;
 }
 
+#contact textarea {
+    resize: none;
+    height: 80px;
+}
+
+#contact button {
+    padding: 10px 25px 10px 25px;
+    font-size: 12pt;
+    background-color: #8B26AB;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    float: right;
+    margin-right: 35px;
+}
+
+#contact button:hover {
+    filter: brightness(85%);
+}
+
 #contact input:focus, #contact textarea:focus {
     outline: none;
 }
 
-h1 {
-    font-size: 30pt;
-    margin-bottom: 10px;
-}
 
-.center {
-    text-align: center;
-    width: 800px;
-    margin: auto;
-    font-size: 14pt;
-    color: #333;
-    max-width: 100%;
-}
-
-#block {
-    width: 100%;
-    height: 500px;
-    background: #ddd;
-    position: relative;
-}
-
-
-/* *********************************************************** */
+/* ****************************** Custom Shape Divider ****************************** */
 .custom-shape-divider-top-1680652112 {
     position: absolute;
     top: 0;
@@ -173,9 +207,12 @@ h1 {
 .custom-shape-divider-top-1680652112 .shape-fill {
     fill: #FFFFFF;
 }
-/* *********************************************************** */
 
+
+/* ********************************* Mobile Styling ********************************* */
 @media only screen and (max-width: 800px) {
     #nav { display: none; }
     #mobile_nav { display: block; }
+    #top_img {
+    }
   }

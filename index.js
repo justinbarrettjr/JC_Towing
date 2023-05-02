@@ -14,7 +14,7 @@ document.body.onresize = () => { resize() }
 function resize() {
     const aspect = 0.390625 // height / width
     let h = window.innerWidth * aspect
-    top_img.style.height = `${h}px`
+    top_img.style.height = `${h+100}px`
     position_dropdown()
     if (window.innerWidth > 800) close_mobile_menu()
 }
