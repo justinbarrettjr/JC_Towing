@@ -140,6 +140,7 @@ h1 {
     margin: auto;
     font-size: 14pt;
     color: #333;
+    max-width: 100%;
 }
 
 #block {
