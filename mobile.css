@@ -21,7 +21,33 @@
     background: #000000d8;
     opacity: 0;
     display: none;
+    padding-top: 20px;
 }
+
+#mobile_menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 20pt;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+#mobile_menu a:hover {
+    text-decoration: underline;
+}
+
+#mobile_menu hr {
+    border: 0;
+    border-top: 1px solid #aaa;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#mobile_menu i {font-size: 18pt; margin-right: 8px; height: 12pt;}
 
 /* *************************************************************************** */
 

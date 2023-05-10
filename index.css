@@ -213,6 +213,5 @@ footer {
 @media only screen and (max-width: 800px) {
     #nav { display: none; }
     #mobile_nav { display: block; }
-    #top_img {
-    }
+    #contact {display: none;}
   }
