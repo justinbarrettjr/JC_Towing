@@ -55,11 +55,11 @@ function shrink_header() {
 }
 
 function position_dropdown() {
-    let drop = document.getElementById('dropdown')
-    let drop_a = document.getElementById('dropdown_link')
+    // let drop = document.getElementById('dropdown')
+    // let drop_a = document.getElementById('dropdown_link')
 
-    drop.style.top = (getOffset(drop_a).top + drop_a.offsetHeight + nav_margin) + 'px'
-    drop.style.left = getOffset(drop_a).left + 'px'
+    // drop.style.top = (getOffset(drop_a).top + drop_a.offsetHeight + nav_margin) + 'px'
+    // drop.style.left = getOffset(drop_a).left + 'px'
 }
 
 function getOffset( el ) {
@@ -73,11 +73,11 @@ function getOffset( el ) {
     return { top: _y, left: _x };
 }
 
-document.getElementById('dropdown_link').onmouseover = () => { show_dropdown() }
-document.getElementById('dropdown').onmouseover = () => { show_dropdown() }
+// document.getElementById('dropdown_link').onmouseover = () => { show_dropdown() }
+// document.getElementById('dropdown').onmouseover = () => { show_dropdown() }
 
-document.getElementById('dropdown_link').onmouseout = () => { hide_dropdown() }
-document.getElementById('dropdown').onmouseout = () => { hide_dropdown() }
+// document.getElementById('dropdown_link').onmouseout = () => { hide_dropdown() }
+// document.getElementById('dropdown').onmouseout = () => { hide_dropdown() }
 
 document.getElementById('mobile_nav_button').onclick = () => { 
     if (!is_mobile_menu) open_mobile_menu()
