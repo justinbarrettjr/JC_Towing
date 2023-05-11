@@ -267,6 +267,7 @@ b {
     #footer_phone div:nth-child(2) {
         font-size: 1.4em;
   }
+}
   @media screen and (min-width: 1000px) {
     h1 {
        font-size: 2.7em;
