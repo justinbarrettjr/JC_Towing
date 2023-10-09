@@ -63,7 +63,7 @@ nav a:hover, nav .active {
 }
 
 nav .colored {
-    background-color: #8B26AB;
+    background-color: #9733B6;
     color: #fff;
     box-shadow: 0 0 0 transparent!important;
 }
@@ -74,6 +74,32 @@ nav .colored:hover {
 
 
 /* *********************************** Body *********************************** */
+
+/* Call to Action Button */
+#cta {
+    position: sticky;
+    bottom: 20px;
+    left: 20px;
+    margin-bottom: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background: #9733B6;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease;
+    display: none;
+}
+
+#cta:hover {
+    filter: brightness(90%);
+}
+
+#cta i {
+    color: white;
+    font-size: 35px;
+}
+
 #top_img {
     background-image: url(img/temp2.jpg);
     width: 100%;
@@ -109,7 +135,7 @@ nav .colored:hover {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
@@ -368,6 +394,7 @@ li {
     #nav { display: none; }
     #mobile_nav { display: block; }
     #contact {display: none;}
+    #cta {display: flex;}
     
     #footer_phone div:nth-child(1) {
         font-size: 0.7em;

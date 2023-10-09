@@ -17,6 +17,7 @@ function resize() {
     top_img.style.height = `${h+100}px`
     position_dropdown()
     if (window.innerWidth > 800) close_mobile_menu()
+    document.getElementById("cta").style.left = window.innerWidth - document.getElementById("cta").offsetWidth - 35 + "px"
 }
 
 document.body.onscroll = (e) => {
